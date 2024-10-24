@@ -1,0 +1,138 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*      MY CODE       */
+@font-face {
+    font-family: WorksansIt ;
+    src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Worksans;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+body{
+    width:100%;
+    height: max-content;
+    margin:0;
+    font-family: Worksans;
+    background: #f9eeff;
+}
+.bg-col{
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    top: 0;
+    background-image:url(assets/images/background-pattern-mobile.svg);
+}
+
+
+section{
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: -23vw;
+    margin-bottom: 20vh;
+    box-shadow: 1px 1px 12px #8d828e4f;
+    padding-bottom: 1rem;  
+
+    & .resp{
+    display:none;
+    color:#8d828e;
+    line-height: 1.5;
+    font-size: 1rem;
+    }
+
+    & .query{
+        color:black;
+        width: 85%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        
+    }
+}
+.head{
+
+    & img{
+        width: 1.5rem;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+
+    }
+    & h1{
+    display:inline;
+    margin-left: 1.3rem;
+    font-size: 2rem;
+    
+    }
+}
+
+article{
+    margin:auto 1rem;
+    & img{
+        cursor: pointer;
+    }
+
+}
+
+article div{
+    border-bottom:2px solid #8d828e0a;
+    display: flex;
+    justify-content: space-between;
+}
+.lastdiv{
+    border:none;
+}
+
+
+@media (min-width : 450px){
+    
+   
+    section{
+        width: 80vw;
+        margin: auto;
+        margin-top: -10vw;
+    }
+.head{
+    & h1{
+        font-size:vw;
+    }
+}
+
+    .bg-col{
+        height: 30vh;
+    }
+
+}
+
+@media(min-width:800px){
+   
+    section{
+        max-width: 600px;
+        margin-top: -17vh;
+    }
+    article{
+        margin:auto 2.5rem ;
+        margin-top: 1rem;
+    }
+    .bg-col{
+        height:35vh;
+    }
+    .head{
+        margin:auto 1.5rem ;
+
+        & img{
+            width:2.5rem;
+            margin-top: 3rem;
+
+        }& h1{
+            font-size: 3.3rem;
+        }
+    }
+
+    
+
+
+}
