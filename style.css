@@ -31,19 +31,21 @@ body{
 section{
     width: 90%;
     background: white;
-    border-radius: 10px;
+    border-radius: 7px;
     margin: auto;
     margin-top: -23vw;
     margin-bottom: 20vh;
     box-shadow: 1px 1px 12px #8d828e4f;
     padding-bottom: 1rem;  
 
+    
     & .resp{
     display:none;
     color:#8d828e;
     line-height: 1.5;
     font-size: 1rem;
     }
+    
 
     & .query{
         color:black;
@@ -87,6 +89,7 @@ article div{
 }
 
 
+
 @media (min-width : 450px){
     
    
@@ -103,6 +106,8 @@ article div{
 
     .bg-col{
         height: 30vh;
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        
     }
 
 }
@@ -111,7 +116,7 @@ article div{
    
     section{
         max-width: 600px;
-        margin-top: -17vh;
+        margin-top: -18vh;
     }
     article{
         margin:auto 2.5rem ;
@@ -132,7 +137,10 @@ article div{
         }
     }
 
-    
+    .bg-col{
+        height: 30vh;
+        background-image: url(assets/images/background-pattern-desktop.svg);
+     }
 
 
 }
