@@ -62,20 +62,15 @@
 
   <script>
 const sec = document.querySelector('section');
-<<<<<<< HEAD
 const img = document.querySelector('.img');
 const imga = document.querySelector('.h img');
 
-=======
-const img = document.querySelector('.img')
->>>>>>> e27dca15222ee271f496c4dfd6e2078abca61183
 
 sec.addEventListener('click', (e) => {
   let head = e.target.closest('.h');
   let img = e.target.closest('.img')
   if (e.target.classList.contains('img')) {
     let content = head.nextElementSibling;
-<<<<<<< HEAD
     if(img.getAttribute('src') == "assets/images/icon-minus.svg"){
       img.setAttribute('src',"assets/images/icon-plus.svg");
     }else{
@@ -91,18 +86,3 @@ img.click();
   </script>
 </body>
 </html>
-=======
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    if(img.getAttribute('src') == "assets/images/icon-plus.svg"){
-      img.setAttribute('src',"assets/images/icon-minus.svg");
-    }else{
-      img.setAttribute('src',"assets/images/icon-plus.svg");
-    }
-  }
-});
-img.click();
-    
-  </script>
-</body>
-</html>
->>>>>>> e27dca15222ee271f496c4dfd6e2078abca61183
